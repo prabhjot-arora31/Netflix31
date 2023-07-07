@@ -7,6 +7,9 @@
   flex-direction: column;
   align-items: center;
 }
+.over {
+  width: 600px;
+}
 
 button {
   padding: 0.6rem;
@@ -35,8 +38,16 @@ button:hover {
   width: 100%;
 }
 .info {
-  width: 450px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 0.2rem; */
+  /* gap: -2rem; */
+  flex-direction: column;
+  width: 100%;
+}
+.info h4 {
+  margin-bottom: 0;
 }
 .cardMain {
   display: flex;
@@ -44,6 +55,7 @@ button:hover {
   justify-content: center;
   gap: 0.4rem;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
 }
 @media screen and (max-width: 730px) {
@@ -54,6 +66,27 @@ button:hover {
 @media screen and (max-width: 625px) {
   .imgContainer {
     width: 430px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .over {
+    width: 490px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .over {
+    width: 430px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .over {
+    width: 390px;
+    font-size: 12.5px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .over {
+    width: 370px;
   }
 }
 @media screen and (max-width: 510px) {
