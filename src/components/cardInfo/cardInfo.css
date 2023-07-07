@@ -1,104 +1,54 @@
-.imgContainer {
-  width: 650px;
-}
-.main {
-  margin-bottom: 3px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.over {
-  width: 600px;
-}
-
-button {
-  padding: 0.6rem;
-  border-radius: 0.7rem;
-  border: none;
-  background: cyan;
-  box-shadow: inset 0 -1px 0 -1px chartreuse;
-  width: 300px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: box-shadow 0.15s ease-in-out;
-}
-.on {
-  transition: box-shadow 0.15s ease-in-out;
-  box-shadow: inset 0 -1px 0 -1px black;
-}
-.on:hover {
-  box-shadow: inset 0 -40px 0 -1px black;
-  color: white;
-  padding: 0.2rem;
-}
-button:hover {
-  box-shadow: inset 0 -40px 0 -1px chartreuse;
-}
-.imgContainer img {
-  width: 100%;
-}
-.info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* gap: 0.2rem; */
-  /* gap: -2rem; */
-  flex-direction: column;
-  width: 100%;
-}
-.info h4 {
-  margin-bottom: 0;
-  text-align: center;
-  width: 100%;
-}
-.cardMain {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  gap: 0.4rem;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-}
-@media screen and (max-width: 730px) {
-  .imgContainer {
-    width: 590px;
-  }
-}
-@media screen and (max-width: 625px) {
-  .imgContainer {
-    width: 430px;
-  }
-}
-/* @media screen and (max-width: 630px) {
-  .over {
-    width: 490px;
-  }
-}
-@media screen and (max-width: 590px) {
-  .over {
-    width: 430px;
-  }
-}
-@media screen and (max-width: 510px) {
-  .over {
-    width: 390px;
-    font-size: 12.5px;
-  }
-}
-@media screen and (max-width: 440px) {
-  .over {
-    width: 320px;
-  }
-} */
-@media screen and (max-width: 510px) {
-  .imgContainer {
-    width: 340px;
-  }
+import React from "react";
+import "./cardInfo.css";
+function CardInfo(props) {
+  // const data = props.ele;
+  // console.log(typeof data);
+  return (
+    <>
+      <div className="main">
+        <button
+          style={{
+            width: "250px",
+          }}
+          onClick={() => {
+            props.show(true);
+          }}
+        >
+          Click to show all the shows
+        </button>
+        <h1 style={{ textAlign: "center", color: "darkblue" }}>
+          {props.data.name}
+        </h1>
+        <h2
+          style={{ textDecoration: "underline", textAlign: "center" }}
+          className="on"
+        >
+          Original Name: {props.data.original_name}
+        </h2>
+        <div className="cardMain">
+          <div className="imgContainer">
+            <img
+              src={`https://image.tmdb.org/t/p/original/${props.data.backdrop_path}`}
+            />
+          </div>
+          <div className="info">
+            <h4>
+              Rating : {props.data.vote_average}/10({props.data.vote_count})
+            </h4>
+            <h4>Country: {props.data.origin_country}</h4>
+            <h4>Release : {props.data.first_air_date}</h4>
+            <h3
+              className="over"
+              style={{ textAlign: "center", fontSize: "12px" }}
+              // style={{ marginLeft: "auto", marginRight: "auto" }}
+            >
+              {props.data.overview}
+            </h3>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
-@media screen and (max-width: 465px) {
-  .imgContainer {
-    width: 310px;
-  }
-}
+export default CardInfo;
