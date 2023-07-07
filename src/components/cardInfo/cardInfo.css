@@ -48,6 +48,8 @@ button:hover {
 }
 .info h4 {
   margin-bottom: 0;
+  text-align: center;
+  width: 100%;
 }
 .cardMain {
   display: flex;
