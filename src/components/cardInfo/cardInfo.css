@@ -70,7 +70,7 @@ button:hover {
     width: 430px;
   }
 }
-@media screen and (max-width: 630px) {
+/* @media screen and (max-width: 630px) {
   .over {
     width: 490px;
   }
@@ -90,7 +90,7 @@ button:hover {
   .over {
     width: 320px;
   }
-}
+} */
 @media screen and (max-width: 510px) {
   .imgContainer {
     width: 340px;
