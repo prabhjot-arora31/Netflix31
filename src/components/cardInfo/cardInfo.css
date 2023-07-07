@@ -1,0 +1,69 @@
+.imgContainer {
+  width: 650px;
+}
+.main {
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  padding: 0.6rem;
+  border-radius: 0.7rem;
+  border: none;
+  background: cyan;
+  box-shadow: inset 0 -1px 0 -1px chartreuse;
+  width: 300px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: box-shadow 0.15s ease-in-out;
+}
+.on {
+  transition: box-shadow 0.15s ease-in-out;
+  box-shadow: inset 0 -1px 0 -1px black;
+}
+.on:hover {
+  box-shadow: inset 0 -40px 0 -1px black;
+  color: white;
+  padding: 0.2rem;
+}
+button:hover {
+  box-shadow: inset 0 -40px 0 -1px chartreuse;
+}
+.imgContainer img {
+  width: 100%;
+}
+.info {
+  width: 450px;
+  text-align: center;
+}
+.cardMain {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 0.4rem;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 730px) {
+  .imgContainer {
+    width: 590px;
+  }
+}
+@media screen and (max-width: 625px) {
+  .imgContainer {
+    width: 430px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .imgContainer {
+    width: 340px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .imgContainer {
+    width: 310px;
+  }
+}

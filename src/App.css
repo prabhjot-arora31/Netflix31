@@ -1,0 +1,19 @@
+*{
+    font-family: monospace;
+}
+.justToHover {
+    padding: 1.2rem;
+    transition: padding 0.3s;
+}
+.justToHover:hover{
+    cursor: pointer;
+    background-color: aqua;
+    padding: 1.6rem;
+    box-shadow: 5px 5px 7px black;
+}
+.justToHover:hover .imgs{
+    box-shadow: 5px 5px 7px black;
+}
+.justToHover:hover .imgDiv{
+    width: 400;
+}
