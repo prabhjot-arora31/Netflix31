@@ -21,6 +21,8 @@ const App = () => {
         <Route exact element={<UpcomingCards />} path="upcomingmovies"></Route>
         <Route exact element={<PopularCards />} path="popularmovies"></Route>
       </Routes>
+        <Footer />
+
     </BrowserRouter>
   );
 };
