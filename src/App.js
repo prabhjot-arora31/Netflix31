@@ -10,6 +10,8 @@ import MovieCards from "./components/Movies/Cards/Cards";
 import UpcomingCards from "./components/Upcoming_Movies/Cards/Cards";
 import PopularCards from "./components/Popular_Movies/Cards/Cards";
 import Common2 from "./components/Common/Common2";
+import Footer from "./components/Footer/Footer";
+
 // import { useCallback, useState } from "react";
 const App = () => {
   return (
