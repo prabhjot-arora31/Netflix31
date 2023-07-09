@@ -1,0 +1,12 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex button {
+  padding: 0.4rem;
+  width: 90px;
+  height: 30px;
+}

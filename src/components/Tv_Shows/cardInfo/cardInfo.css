@@ -1,0 +1,106 @@
+.imgContainer {
+  width: 650px;
+}
+.main {
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.over {
+  width: 600px;
+}
+.info h3 {
+  width: 300px;
+}
+button {
+  padding: 0.6rem;
+  border-radius: 0.7rem;
+  border: none;
+  background: cyan;
+  box-shadow: inset 0 -1px 0 -1px chartreuse;
+  width: 300px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: box-shadow 0.15s ease-in-out;
+}
+.on {
+  transition: box-shadow 0.15s ease-in-out;
+  box-shadow: inset 0 -1px 0 -1px black;
+}
+.on:hover {
+  box-shadow: inset 0 -40px 0 -1px black;
+  color: white;
+  padding: 0.8rem;
+}
+button:hover {
+  box-shadow: inset 0 -40px 0 -1px chartreuse;
+}
+.imgContainer img {
+  width: 100%;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 0.2rem; */
+  /* gap: -2rem; */
+  flex-direction: column;
+  /* width: 100%; */
+}
+.info h4 {
+  margin-bottom: 0;
+  text-align: center;
+  /* width: 100%; */
+}
+.cardMain {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 2.4rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media screen and (max-width: 730px) {
+  .imgContainer {
+    width: 590px;
+  }
+}
+@media screen and (max-width: 625px) {
+  .imgContainer {
+    width: 430px;
+  }
+}
+/* @media screen and (max-width: 630px) {
+  .over {
+    width: 490px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .over {
+    width: 430px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .over {
+    width: 390px;
+    font-size: 12.5px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .over {
+    width: 320px;
+  }
+} */
+@media screen and (max-width: 510px) {
+  .imgContainer {
+    width: 340px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .imgContainer {
+    width: 310px;
+  }
+}
