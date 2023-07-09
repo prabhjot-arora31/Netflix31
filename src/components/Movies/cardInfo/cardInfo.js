@@ -27,11 +27,12 @@ function CardInfo(props) {
             />
           </div>
           <div className="info">
+            <h4>Original name: {props.data.original_title}</h4>
             <h4>
               Rating : {props.data.vote_average}/10({props.data.vote_count})
             </h4>
-            <h4>Country: {props.data.origin_country}</h4>
-            <h4>Release date: {props.data.first_air_date}</h4>
+            <h4>Release date: {props.data.release_date}</h4>
+            <h4>Language: {props.data.original_language}</h4>
             <h3 style={{ textAlign: "center", fontSize: "13px" }}>
               <span
                 style={{
