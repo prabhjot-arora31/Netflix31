@@ -51,11 +51,17 @@
     top: 10%;
     /* gap: 4px; */
   }
+  .bgImage img {
+    height: 930px;
+  }
 }
 @media screen and (max-width: 692px) {
   .commonCCard {
     height: 0px;
     top: 15%;
+  }
+  .bgImage img {
+    height: 900px;
   }
   .c2 {
     /* margin-top: 2px; */
@@ -88,10 +94,11 @@
 .mainCommon {
   margin-top: auto;
   margin-bottom: auto;
-  max-height: 50%;
+  /* max-height: 50%; */
   display: flex;
   justify-content: center;
-  /* overflow: hidden; */
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/ce221d7a-8901-41d9-b726-3ea2efe3a650/2f69dcef-463f-44da-b3b9-662b65f33f82/IN-en-20230703-popsignuptwoweeks-perspective_alpha_website_large.jpg")
+    /* overflow: hidden; */;
   overflow-y: hidden;
   overflow-x: hidden;
   gap: 2rem;
@@ -102,11 +109,7 @@
     top: 11%;
   }
 }
-@media screen and (max-width: 692px) {
-  .bgImage img {
-    height: 900px;
-  }
-}
+
 @media screen and (max-width: 1168px) {
   .commonCCard {
     width: 800px;
@@ -121,11 +124,11 @@
   }
 }
 
-@media screen and (max-width: 717px) {
+@media screen and (max-width: 716px) {
   .commonCCard {
     width: 340px;
   }
   .bgImage img {
-    height: 1200px;
+    height: 1225px;
   }
 }

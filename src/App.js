@@ -9,12 +9,13 @@ import TvCards from "./components/Tv_Shows/Cards/Cards";
 import MovieCards from "./components/Movies/Cards/Cards";
 import UpcomingCards from "./components/Upcoming_Movies/Cards/Cards";
 import PopularCards from "./components/Popular_Movies/Cards/Cards";
+import Common2 from "./components/Common/Common2";
 // import { useCallback, useState } from "react";
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact element={<Common />} path="/"></Route>
+        <Route exact element={<Common2 />} path="/"></Route>
         <Route exact element={<TvCards />} path="shows"></Route>
         <Route exact element={<MovieCards />} path="movies"></Route>
         <Route exact element={<UpcomingCards />} path="upcomingmovies"></Route>

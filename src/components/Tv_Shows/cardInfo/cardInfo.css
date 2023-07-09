@@ -1,5 +1,8 @@
 .imgContainer {
   width: 650px;
+  box-shadow: -8px -8px 9px gray;
+  /* background-color: gray; */
+  /* height: 100%; */
 }
 .main {
   margin-bottom: 3px;
@@ -38,6 +41,7 @@ button:hover {
 }
 .imgContainer img {
   width: 100%;
+  /* height: 100%; */
 }
 .info {
   display: flex;

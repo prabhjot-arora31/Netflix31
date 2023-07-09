@@ -56,7 +56,7 @@ function TvCards(props) {
   return (
     <>
       {console.log(dataToBePassed)}
-      <div style={{ position: "relative", right: "7px" }}>
+      <div style={{ position: "relative", right: "7px", top: "-10px" }}>
         <div
           style={{
             position: "fixed",
@@ -113,6 +113,9 @@ function TvCards(props) {
             gap: "20px",
 
             flexWrap: "wrap",
+
+            paddingLeft: "0.5rem",
+            paddingRight: "0.5rem",
             marginBottom: "2rem",
             width: "100%",
             position: "relative",

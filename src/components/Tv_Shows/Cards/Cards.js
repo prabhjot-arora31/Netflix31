@@ -8,7 +8,13 @@ function TvCards(props) {
   const [data, setData] = useState("");
   const [showWholeCard, setShowWholeCard] = useState(true);
   // const [dataToBePassed, setDataToBePassed] = useState("");
-
+  const [darkMode, setDarkMode] = useState({
+    bgColor: "white",
+    borderColor: "black",
+    txtColor: "black",
+    topIs: "6.2rem",
+    btnText: "Switch to dark mode",
+  });
   useEffect(() => {
     async function fetchAPI() {
       const tempData = await fetch(
@@ -28,7 +34,7 @@ function TvCards(props) {
   return (
     <>
       {console.log(dataToBePassed)}
-      <div style={{ position: "relative", right: "7px" }}>
+      <div style={{ position: "relative", right: "7px", top: "-10px" }}>
         <div
           style={{
             position: "fixed",
@@ -45,9 +51,9 @@ function TvCards(props) {
               color: "white",
               position: "relative",
               right: "6px",
-              marginLeft: "auto",
-              marginRight: "auto",
               width: "100%",
+              paddingLeft: "0.5rem",
+              paddingRight: "0.5rem",
             }}
           >
             <button
@@ -57,7 +63,14 @@ function TvCards(props) {
             >
               Home
             </button>
-            <h1>Top Rated Shows</h1>
+            <h1>Top rated shows</h1>
+            {/* <button
+              style={{ width: "160px" }}
+              className="switch"
+              onClick={switchToDarkMode}
+            >
+              {darkMode.btnText}
+            </button> */}
           </div>
         </div>
       </div>
@@ -75,11 +88,14 @@ function TvCards(props) {
           display: "flex",
           justifyContent: "center",
           gap: "20px",
+
+          paddingLeft: "0.5rem",
+          paddingRight: "0.5rem",
           flexWrap: "wrap",
           marginBottom: "2rem",
-
+          width: "100%",
           position: "relative",
-          top: "6.2rem",
+          top: `${darkMode.topIs}`,
         }}
       >
         {/* {data &&

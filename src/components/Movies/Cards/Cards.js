@@ -53,7 +53,7 @@ function TvCards(props) {
   return (
     <>
       {console.log(dataToBePassed)}
-      <div style={{ position: "relative", right: "7px" }}>
+      <div style={{ position: "relative", right: "7px", top: "-10px" }}>
         <div
           style={{
             position: "fixed",
@@ -93,7 +93,7 @@ function TvCards(props) {
           </div>
         </div>
       </div>
-      {/* <div
+      <div
         style={{
           display: "flex",
           justifyContent: "center",
@@ -101,7 +101,7 @@ function TvCards(props) {
           gap: "2rem",
           flexWrap: "wrap",
         }}
-      ></div> */}
+      ></div>
       <div style={{ width: "100%", backgroundColor: darkMode.bgColor }}>
         <div
           style={{
@@ -110,8 +110,13 @@ function TvCards(props) {
             gap: "20px",
 
             flexWrap: "wrap",
-            marginBottom: "2rem",
+            // marginBottom: "6rem",
             width: "100%",
+            // padding: "2rem",
+            paddingLeft: "0.5rem",
+            paddingRight: "0.5rem",
+            marginLeft: "auto",
+            marginRight: "auto",
             position: "relative",
             top: `${darkMode.topIs}`,
           }}
